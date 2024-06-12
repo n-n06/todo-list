@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todo list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main class = "app">
+
+            <section class="greeting">
+                <h2 class="title">
+                    Long time no see, <input type="text" id="name" placeholder="Name here"/> 
+                </h2>
+            </section>
+
+            <section class="create-todo">
+                <h3>Create a todo</h3>
+                <form id="new-todo-form">
+
+                    <h4>What's on your todo list</h4>
+                    <input 
+                        type="text"
+                        name="content"
+                        id="content"
+                        placeholder="e.g. do ml hw" />
+                    
+                    <h4>Pick a category</h4>
+                    <div class="options">
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category"
+                                id="category1"
+                                value="university"/>
+                            <span class="bubble university"></span>
+                            <div>University</div>
+                        </label>
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category"
+                                id="category2"
+                                value="house errands"/>
+                            <span class="bubble house-errands"></span>
+                            <div>House errands</div>
+                        </label>
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category"
+                                id="category3"
+                                value="self-study"/>
+                            <span class="bubble self-study"></span>
+                            <div>Self-study</div>
+                        </label>
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category"
+                                id="category4"
+                                value="personal"/>
+                            <span class="bubble personal"></span>
+                            <div>Personal</div>
+                        </label>
+
+                        <label>
+                            <input 
+                                type="radio" 
+                                name="category"
+                                id="category5"
+                                value="part-time job"/>
+                            <span class="bubble part-time-job"></span>
+                            <div>Part-time job</div>
+                        </label>
+
+                    </div>
+
+                    <input type="submit" value="Add todo" />
+                </form>
+            </section>
+
+            <section class="todo-list">
+                <h3>TODO LIST</h3>
+                <div class="list" id="todo-list">
+
+                    <!-- <div class="todo-item done">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble university"></span>
+                        </label>
+ 
+                        <div class="todo-content">
+                            <input type="text" value="Do ml hw" readonly> 
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble house-errands"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Get bread" readonly> 
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> 
+
+                    <div class="todo-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble self-study"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Get bread" readonly> 
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> 
+
+                    <div class="todo-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble personal"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Get bread" readonly> 
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> 
+
+                    <div class="todo-item">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="bubble part-time-job"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Get bread" readonly> 
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+ 
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
