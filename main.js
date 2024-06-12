@@ -56,7 +56,7 @@ function DisplayTodos () {
 
         if (todo.category == 'university') {
             span.classList.add('university');
-        } else if (todo.category == 'house errands'){
+        } else if (todo.category == 'house-errands'){
             span.classList.add('house-errands');
         } else if (todo.category == 'self-study'){
             span.classList.add('self-study');
